@@ -101,23 +101,34 @@ flowchart LR
 Для матрицы входных представлений $X$ вычисляются запросы, ключи и значения:
 
 $$
-Q=XW_Q,\qquad K=XW_K,\qquad V=XW_V.
+Q = XW_Q,\qquad
+K = XW_K,\qquad
+V = XW_V.
 $$
 
 Масштабированное скалярное внимание задаётся формулой:
 
 $$
-\operatorname{Attention}(Q,K,V)=
-\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V.
+\mathrm{Attention}(Q,K,V)
+=
+\mathrm{softmax}
+\left(
+\frac{QK^{T}}{\sqrt{d_k}}
+\right)V.
 $$
 
 Матрица
 
 $$
-A=\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
+A
+=
+\mathrm{softmax}
+\left(
+\frac{QK^{T}}{\sqrt{d_k}}
+\right)
 $$
 
-содержит веса внимания. Элемент $A_{ij}$ показывает, насколько сильно представление позиции $i$ использует информацию позиции $j$ на данном слое и в данной голове.
+содержит веса внимания. Элемент $A_{ij}$ показывает, насколько сильно представление позиции $i$ использует информацию позиции $j$ на данном слое и в данной голове внимания.
 
 Рассмотрим предложение:
 
