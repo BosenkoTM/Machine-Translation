@@ -74,14 +74,18 @@ print(pairs.most_common(5))
 
 ### 3. Transformer как базовая архитектура NMT
 
-Механизм внимания:
+Механизм внимания задаётся формулой:
 
-$$
-\operatorname{Attention}(Q,K,V)=
-\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V.
-$$
+```math
+\mathrm{Attention}(Q,K,V)
+=
+\mathrm{softmax}
+\left(
+\frac{QK^{T}}{\sqrt{d_k}}
+\right)V.
+```
 
-В отличие от ранних RNN-моделей, Transformer способен параллельно обрабатывать позиции при обучении и эффективно моделировать дальние зависимости.
+В отличие от ранних RNN-моделей, Transformer способен параллельно обрабатывать позиции последовательности при обучении и эффективно моделировать дальние зависимости.
 
 ```mermaid
 flowchart LR
