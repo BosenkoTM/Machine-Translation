@@ -1,0 +1,11 @@
+pandas
+lxml
+openpyxl
+scikit-learn
+torch
+transformers
+sentencepiece
+python-dotenv
+pydantic
+sacrebleu
+unbabel-comet

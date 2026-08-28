@@ -1,0 +1,11 @@
+concept_id,en,ru,part_of_speech,status,definition,context
+c001,function,функция,noun,preferred,Reusable block of code,A function is a reusable block of code.
+c002,parameter,параметр,noun,preferred,Name in a function definition,A parameter is a name listed in the function definition.
+c003,argument,аргумент,noun,preferred,Value passed during a call,An argument is a value passed to a function.
+c004,return value,возвращаемое значение,noun,preferred,Value produced by a function,A function can return a value.
+c005,function call,вызов функции,noun,preferred,Execution of a function,A function call supplies arguments.
+c006,scope,область видимости,noun,preferred,Region where a name is available,A local variable has function scope.
+c007,local variable,локальная переменная,noun,preferred,Variable local to a function,A local variable is available inside a function.
+c008,default argument,аргумент по умолчанию,noun,preferred,Argument value used by default,A default argument is used when no value is provided.
+c009,docstring,строка документации,noun,preferred,String documenting Python code,A docstring describes a function.
+c010,recursion,рекурсия,noun,preferred,Self-call of a function,Recursion occurs when a function calls itself.
